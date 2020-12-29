@@ -19,6 +19,7 @@ import {
   ScrollView,
   StatusBar,
 } from 'react-native';
+import Router from './src/navigation/router';
 
 
 
@@ -26,9 +27,7 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <GuestSelect/>
-      </SafeAreaView>
+      <Router />
     </>
   );
 };

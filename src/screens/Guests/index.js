@@ -97,10 +97,10 @@ const GuestSelect = (props) => {
                     backgroundColor: '#f15454', 
                     alignItems: 'center', 
                     justifyContent: 'center', 
-                    height: 30, 
-                    marginHorizontal: 20, 
-                    borderRadius: 15
-                }} onPress={() => navigation.navigate(Explore)}>
+                    height: 48,
+                    marginHorizontal: 20,
+                    borderRadius: 16,
+                }} onPress={() => navigation.navigate('Home')}>
                     <Text style={{fontSize: 20, color: 'white', fontWeight: 'bold'}}>
                         Search
                     </Text>

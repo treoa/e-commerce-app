@@ -5,6 +5,7 @@ import DestSearch from "../screens/DestSearch"
 import 'react-native-gesture-handler'
 import GuestSelect from '../screens/Guests';
 import HometabNavigator from './HomeTabNavigator'
+import Post from './../screens/Post'
 
 
 const stack = createStackNavigator();
@@ -34,6 +35,14 @@ const Router = (props) => {
                     component={DestSearch}
                     options={{
                         title: "Search your destination"
+                    }}
+                />
+
+            <stack.Screen
+                    name = {"Post"}
+                    component={Post}
+                    options={{
+                        title: "Accomodation"
                     }}
                 />
             </stack.Navigator>

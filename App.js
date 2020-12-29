@@ -7,12 +7,12 @@
  */
 
 import React from 'react';
-import HomeScreen from './src/screens/Home'
-import Post from './src/screens/Post'
-import feed from './assets/data/feed'
-import SearchResults from './src/screens/SearchResults'
-import DestSearch from './src/screens/DestSearch'
-import GuestSelect from './src/screens/Guests'
+import HomeScreen from './src/screens/Home';
+import Post from './src/screens/Post';
+import feed from './assets/data/feed';
+import SearchResults from './src/screens/SearchResults';
+import DestSearch from './src/screens/DestSearch';
+import GuestSelect from './src/screens/Guests';
 
 import {
   SafeAreaView,

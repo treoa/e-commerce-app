@@ -8,6 +8,7 @@
 
 import React from 'react';
 import HomeScreen from './src/screens/Home'
+import Post from './src/screens/Post'
 
 import {
   SafeAreaView,
@@ -21,7 +22,7 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <HomeScreen/>
+        <Post/>
       </SafeAreaView>
     </>
   );

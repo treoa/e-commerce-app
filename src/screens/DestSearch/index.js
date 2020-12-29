@@ -9,9 +9,10 @@ import EvilIcons from 'react-native-vector-icons/EvilIcons';
 
 import styles from './styles'
 import searchRes from './../../../assets/data/search'
+import {useNavigation} from '@react-navigation/native'
 
 const DestSearch = (props) => {
-
+    const navigation = useNavigation();
     const [inputText, setInputText] = useState('');
 
     return (
@@ -26,12 +27,12 @@ const DestSearch = (props) => {
             <FlatList
                 data={searchRes}
                 renderItem={({item}) => (
-                    <View style={styles.searchResult}>
+                    <Pressable onPress={() => navigation.navigate('Guests')} style={styles.searchResult}>
                         <View style={styles.iconContainer}>
                             <Entype name={'location-pin'} size = {30}/>
                         </View>
                         <Text style={styles.locationText}>{item.description}</Text>
-                    </View>
+                    </Pressable>
                 )}
             />
         </View>

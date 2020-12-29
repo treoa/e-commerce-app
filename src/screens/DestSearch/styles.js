@@ -19,10 +19,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#e7e7e7',
         borderRadius: 10,
         padding: 8,
-        marginRight: 10,
+        marginRight: 15,
     },
     locationText: {
-        
+        fontSize: 16,
     },
 });
 

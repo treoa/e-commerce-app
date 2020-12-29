@@ -11,6 +11,7 @@ import HomeScreen from './src/screens/Home'
 import Post from './src/screens/Post'
 import feed from './assets/data/feed'
 import SearchResults from './src/screens/SearchResults'
+import DestSearch from './src/screens/DestSearch'
 
 import {
   SafeAreaView,
@@ -25,7 +26,7 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <SearchResults/>
+        <DestSearch/>
       </SafeAreaView>
     </>
   );

@@ -10,6 +10,7 @@ import React from 'react';
 import HomeScreen from './src/screens/Home'
 import Post from './src/screens/Post'
 import feed from './assets/data/feed'
+import SearchResults from './src/screens/SearchResults'
 
 import {
   SafeAreaView,
@@ -24,12 +25,7 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <ScrollView>
-          {feed.map((x) => (
-            <Post post={x}/>
-          ))}
-        </ScrollView>
-        
+        <SearchResults/>
       </SafeAreaView>
     </>
   );

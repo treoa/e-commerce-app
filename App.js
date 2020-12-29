@@ -9,9 +9,11 @@
 import React from 'react';
 import HomeScreen from './src/screens/Home'
 import Post from './src/screens/Post'
+import feed from './assets/data/feed'
 
 import {
   SafeAreaView,
+  ScrollView,
   StatusBar,
 } from 'react-native';
 
@@ -22,7 +24,12 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <Post/>
+        <ScrollView>
+          {feed.map((x) => (
+            <Post post={x}/>
+          ))}
+        </ScrollView>
+        
       </SafeAreaView>
     </>
   );
